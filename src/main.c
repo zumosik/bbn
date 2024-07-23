@@ -1,3 +1,9 @@
 #include <stdio.h>
 
-int main() { printf("Hello world!\n"); }
+#include "common.h"
+
+int main() {
+  u32 a = 5;
+  printf("%d\n", a);
+  return 0;
+}
