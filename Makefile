@@ -11,4 +11,8 @@ debug:
 	@ $(MAKE) -f src/makefile NAME=$(RESULT_NAME) MODE=debug SOURCE_DIR=src 
 
 release:
-	@ $(MAKE) -f src/makefile NAME=$(RESULT_NAME) MODE=release SOURCE_DIR=src 
+	@ $(MAKE) -f src/makefile NAME=$(RESULT_NAME) MODE=release SOURCE_DIR=src
+
+# make sure 'clang-format' will format code in Google style 
+nvim-clang-format:
+	@ ~/.local/share/nvim/mason/bin/clang-format --style Google --dump-config > .clang-format
