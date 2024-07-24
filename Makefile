@@ -1,7 +1,7 @@
 ## Constants
 
 CC := gcc
-CFLAGS := -Wall -O2 -MMD -MP
+CFLAGS := -Wall -O3 -MMD -MP
 
 ## Variables
 
